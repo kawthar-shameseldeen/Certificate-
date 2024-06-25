@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate</title>
+    <style>
+        * {
+            background-color: cornsilk;
+        }
+        .container {
+            position: absolute;
+            display: inline-block;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff8e1;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left; 
+            max-width: 90%;
+            width: auto;
+        }
+        .image {
+            display: inline-block;
+            vertical-align: top;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .Title {
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 20px;
+            
+        }
+        .Title h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .Title h3 {
+            margin: 5px 0 0 0;
+            font-weight: normal;
+        }
+        .Title h4 {
+            margin: 5px 0 0 0;
+            font-weight: normal;
+        }
+        .Material {
+            margin-top: 20px;
+        }
+        .Material ul {
+            padding-left: 20px;
+        }
+        .Material {
+            margin-top: 20px;
+        }
+        .Material ul {
+            padding-left: 20px;
+        }
+        .Material h3, .Hobbies h4 {
+            transition: color 0.3s ease;
+        }
+        .Material h3:hover, .Hobbies h4:hover {
+            color: #0f969c; 
+        }
+        .schedule-title {
+            
+            font-weight: bold;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .schedule {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .schedule th, .schedule td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .schedule th {
+            background-color: #f4f4f4;
+            font-weight: bold;.Hobbies {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .Hobbies h4 {
+            font-size: 22px;
+            font-weight: bold;
+            color: #333;
+        }
+        .Hobbies p {
+            color: #333;
+            line-height: 1.6;
+            font-size: 16px;
+            text-align: justify;
+            margin: 10px 0;
+        }
+        }
+        .schedule td {
+            height: 50px; 
+        }
+      
+       
+       
+            .profile-image {
+                display: block;
+                margin: 0 auto;
+                width: 120px;
+                height: 120px;
+            }
+            .profile-text {
+                display: block;
+                margin-left: 0;
+                margin-top: 10px;
+                text-align: center;
+                max-width: 100%;
+            }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container"> <!--I've added all the content in one div , give it a class to add the style for all the page -->
+            <!--Image-->
+            <div class="image">
+                <img src="Assest/myPic.jpeg" alt="my Image" class="img">
+            </div>
+            <!--Title-->
+            <div class="Title">
+                <h1>Kawthar Shameseldeen</h1>
+                <h3>Computer & Communication Engineering</h3>
+                <h4>Islamic University of Lebanon</h4>
+            </div>
+            <!--Material-->
+            <div class="Material">
+                <h3>Material:</h3>
+                <ul>
+                    <li>Database</li>
+                    <li>Data Communication</li>
+                    <li>Digital Signal Processing</li>
+                    <li>Analog Electronics</li>
+                    <li>Network Essentials</li>
+                    <li>OOP using Java</li>
+                    <li>Machine Learning</li>
+                    <li>Computer Architecture</li>
+                    <li>Computer Organization</li>
+                    <li>Operating System</li>
+                    <li>Software Engineering</li>
+                </ul>
+            </div>
+            <!--Schedule-->
+            <div class="schedule-title"><h3>Weekly Schedule</h3></div>
+            <table class="schedule">
+                <thead>
+                    <!--First Row-->
+                    <tr>
+                        <th>Time</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--Second Row-->
+                    <tr>
+                        <td class="time-slot">8:00 - 9:15</td>
+                        <td class="activity">Computer Architecture</td>
+                        <td class="activity">Computer Architecture</td>
+                        <td class="activity">Network Essentials</td>
+                        <td class="activity">Network Essentials</td>
+                    </tr>
+                    <!--Third Row-->
+                    <tr>
+                        <td class="time-slot">9:15 - 10:30</td>
+                        <td class="activity">Machine Learning</td>
+                        <td class="activity">Machine Learning</td>
+                        <td class="activity">Network LAB</td>
+                        <td class="activity">OS LAB</td>
+                    </tr>
+                    <!--Fourth Row-->
+                    <tr>
+                        <td class="time-slot">11:00 - 12:15</td>
+                        <td class="activity">OOP</td>
+                        <td class="activity">OOP</td>
+                        <td class="activity">OOP</td>
+                        <td class="activity">Software Eng</td>
+                    </tr>
+                    <!--Fifth Row-->
+                    <tr>
+                        <td class="time-slot">12:15 - 1:30</td>
+                        <td class="activity">OS</td>
+                        <td class="activity">OS</td>
+                        <td class="activity"></td>
+                        <td class="activity"></td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+            <!--End Table -->
+            <!--Hobbies-->
+            <div class="Hobbies">
+                <h4>Hobbies:</h4>
+                <p>
+                    
+                    I love coding, as it allows me to solve problems and create new things. 
+                    I also enjoy going to the gym to stay fit and energized. Additionally, I seek new adventures,
+                    whether exploring new places or trying new activities, to keep life exciting and balanced.
+                </p>
+              </div>
+        </div>
+    </header>
+</body>
+</html>
